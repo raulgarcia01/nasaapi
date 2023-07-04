@@ -1,0 +1,10 @@
+DROP TABLE IF EXISTS api_data;
+
+CREATE TABLE api_data (
+     id SERIAL PRIMARY KEY,
+     href VARCHAR(250) NOT NULL,
+     center VARCHAR(250) NOT NULL,
+     title VARCHAR(250) NOT NULL,
+     nasa_id VARCHAR(250) NOT NULL,
+     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
